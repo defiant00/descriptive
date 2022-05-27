@@ -33,13 +33,10 @@ class   ; my test class
     Console WriteLine "The user name from the object: {the user Name}"
     Console Writeline "If you were older, you might be {the user older}"
 
-class   ; person
-  string Name
-  int Age
-  
-  new string name, int age
-    Name = name
-    Age = age
+class     ; person
+  new name string, age int
+    name  ; Name
+    age   ; Age
   
   fn    ; print details
     Console Writeline "{Name} is {Age} years old."
