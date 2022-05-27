@@ -6,6 +6,10 @@ A simple example:
 ```
 ; this is a comment
 
+; Comments name things. If a comment has "quotes" then the name is just the quoted part.
+; Comments don't necessarily create a variable, but they can reference an expression.
+; Things are referred to by their full name, with each part separated by whitespace.
+
 use System
 use System Collections Generic
 
@@ -13,7 +17,7 @@ namespace Descriptive Test
 
 class   ; test class
   fn    ; "Main" method
-    Console WriteLine "Welcome to descriptive"    ; no parentheses required unless you need to specify which parameters belong to which call
+    Console WriteLine "Welcome to descriptive"    ; no parentheses required
     Console WriteLine
     Console WriteLine "Please enter your name"
     Console ReadLine        ; user name
