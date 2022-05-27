@@ -7,15 +7,16 @@ A simple example:
 ; this is a comment
 
 use System
+use System Collections Generic
 
 namespace Descriptive Test
 
-class   ; my test class
-  fn    ; my "Main" function
-    Console WriteLine "Welcome to descriptive"    ; no parentheses needed unless you need to specify nesting
+class   ; test class
+  fn    ; "Main" method
+    Console WriteLine "Welcome to descriptive"    ; no parentheses required unless you need to specify which parameters belong to which call
     Console WriteLine
     Console WriteLine "Please enter your name"
-    Console ReadLine    ; user name
+    Console ReadLine        ; user name
     Console Writeline "Hello {user name}"
     Console WriteLine "How old are you?"
     Console ReadLine        ; age
@@ -32,8 +33,20 @@ class   ; my test class
     the user print details
     Console WriteLine "The user name from the object: {the user Name}"
     Console Writeline "If you were older, you might be {the user older}"
+    the user older    ; the user Age
+    Console WriteLine "Your age has been updated to {the user Age}"
+    
+    ; generics and accessors
+    new List of string            ; my list
+    my list Add "first value"
+    my list Add "second"
+    Console WriteLine my list 0   ; print out the first value
+    "new first value"             ; my list 0
 
 class     ; person
+  string  ; Name
+  int     ; Age
+  
   new name string, age int
     name  ; Name
     age   ; Age
