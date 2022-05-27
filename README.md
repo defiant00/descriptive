@@ -11,7 +11,7 @@ use System
 namespace Descriptive Test
 
 class   ; my test class
-  fn()  ; my "Main" function
+  fn    ; my "Main" function
     Console WriteLine "Welcome to descriptive"    ; no parentheses needed unless you need to specify nesting
     Console WriteLine
     Console WriteLine "Please enter your name"
