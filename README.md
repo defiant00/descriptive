@@ -47,7 +47,7 @@ class   ; test class
     Console WriteLine my list 0   ; print out the first value
     "new first value"             ; my list 0
 
-class     ; person
+class is System Object      ; person
   string  ; Name
   int     ; Age
   
